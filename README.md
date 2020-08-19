@@ -323,6 +323,7 @@ You can test to send your using this project (paste your Adaptive Card Payload i
 Useful links:
 - [Adaptive buttons and cards designer](https://developer.webex.com/buttons-and-cards-designer)
 - [Use Adaptive cards in Webex Teams](https://developer.webex.com/docs/api/guides/cards)
+- [Docs and Schema Explorer](https://docs.microsoft.com/en-us/adaptive-cards/)
 
 After sending you can get details using this request
 
@@ -450,6 +451,8 @@ You can edit this file and add in there your custom responses.
 > Each response should be in a new line. The code detects the Unix system's newlines (\n) symbol as a line delineator.
 
 If the user book workplace on a certain day and capacity of this day is full users get a message `Sorry, all seats have already booked for this day. Try to choose another day, or booking a meeting room. In case of an emergency, contact the lobby.`
+
+#### Available commands
 
 **/inform**
 In response to the message `/inform`, the bot sends such a card there are two fields in one, we insert the text into the other link to the picture. Then there are two "Test" buttons, after clicking this button - a message comes from bot to your 1-to-1 space and you can view how the text/picture is displayed. The second button “Send a message to all contacts in the file cardText_Inform.txt” sends a message to everyone)
