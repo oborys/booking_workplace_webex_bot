@@ -366,5 +366,5 @@ lastReportDate(date='2020, 6, 23')
 createWebhook(bearer, webhookUrl)
 
 sched = BackgroundScheduler(daemon=True)
-sched.add_job(editLists, 'interval', minutes=3)
+sched.add_job(editLists, 'interval', minutes=60)
 sched.start()
