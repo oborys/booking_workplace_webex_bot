@@ -1,0 +1,65 @@
+{
+    "toPersonEmail": "USER_EMAIL",
+    "markdown": "Inform Card",
+    "attachments": [
+        {
+            "contentType": "application/vnd.microsoft.card.adaptive",
+            "content": {
+                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                "type": "AdaptiveCard",
+                "version": "1.0",
+                "body": [
+                    {
+                        "type": "Image",
+                        "altText": "",
+                        "url": "https://i.ibb.co/YLLVkVs/book-workplace.png"
+                    },
+                    {
+                        "type": "TextBlock",
+                        "text": "Insert the text and image links in the appropriate fields below (you can use this resource https://imgbb.com/ after downloading select - HTML full linked, copy the URL from src = 'URL'",
+                        "wrap": true
+                    },
+                    {
+                        "type": "Input.Text",
+                        "id": "Inform_text",
+                        "placeholder": "Text to send (up to 2000 characters)",
+                        "maxLength": 2000
+                    },
+                    {
+                        "type": "Input.Text",
+                        "id": "img_url",
+                        "placeholder": "link to the image * .png, * .jpg"
+                    },
+                    {
+                        "type": "ActionSet",
+                        "actions": [
+                        {
+                        "type": "Action.Submit",
+                        "title": "Test",
+                        "data": {
+                            "button": "test_inform"
+                            }
+                        }
+                        ],
+                    "horizontalAlignment": "Left",
+                    "spacing": "None"
+                    },
+                    {
+                        "type": "ActionSet",
+                        "actions": [
+                        {
+                        "type": "Action.Submit",
+                        "title": "Send a message to all contacts in the cardText_Inform.txt file",
+                        "data": {
+                            "button": "send_inform"
+                            }
+                        }
+                        ],
+                    "horizontalAlignment": "Left",
+                    "spacing": "None"
+                    }
+                ]
+            }
+        }
+    ]
+}

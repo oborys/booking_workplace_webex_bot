@@ -1,0 +1,82 @@
+{
+    "toPersonEmail": "USER_EMAIL",
+    "markdown": "Date for Booking",
+    "attachments": [
+        {
+            "contentType": "application/vnd.microsoft.card.adaptive",
+            "content": {
+                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                "type": "AdaptiveCard",
+                "version": "1.0",
+                "body": [
+                    {
+                        "type": "Image",
+                        "altText": "",
+                        "url": "https://i.ibb.co/YLLVkVs/book-workplace.png"
+                    },
+                    {
+                        "type": "TextBlock",
+                        "text": "Select a date to book the workplace. If limit will be exceeded, you receive a corresponding message",
+                        "wrap": true
+                    },
+                    {
+                        "type": "ActionSet",
+                        "actions": [
+                        {
+                        "type": "Action.Submit",
+                        "title": "Book for today",
+                        "data": {
+                            "button": "today"
+                            }
+                        }
+                        ],
+                    "horizontalAlignment": "Left",
+                    "spacing": "None"
+                    },
+                    {
+                        "type": "ActionSet",
+                        "actions": [
+                        {
+                        "type": "Action.Submit",
+                        "title": "Book for tomorrow",
+                        "data": {
+                            "button": "tomorrow"
+                            }
+                        }
+                        ],
+                    "horizontalAlignment": "Left",
+                    "spacing": "None"
+                    },
+                    {
+                        "type": "ActionSet",
+                        "actions": [
+                        {
+                        "type": "Action.Submit",
+                        "title": "Book for the day after tomorrow",
+                        "data": {
+                            "button": "after tomorrow"
+                            }
+                        }
+                        ],
+                    "horizontalAlignment": "Left",
+                    "spacing": "None"
+                    },
+                    {
+                        "type": "ActionSet",
+                        "actions": [
+                        {
+                        "type": "Action.Submit",
+                        "title": "View free workplace",
+                        "data": {
+                            "button": "free space"
+                            }
+                        }
+                        ],
+                    "horizontalAlignment": "Left",
+                    "spacing": "None"
+                    }
+                ]
+            }
+        }
+    ]
+}

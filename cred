@@ -1,0 +1,18 @@
+
+[Webex]
+# PASTE_BOT'S_ACCESS_TOKEN
+WEBEX_TEAMS_TOKEN = 
+WEBEX_BOT_EMAIL = 
+# PASTE_ROOM_ID_REPORT
+WEBEX_TEAMS_ROOM_ID_REPORT = 
+# Paste webhookUrl
+WEBEX_WEBHOOK_URL = 
+
+
+[Parameters]
+# Set your custom report time (24-hour format)
+REPORT_TIME = 20:00
+# Enter capacity of working place
+CAPACITY = 15
+
+
